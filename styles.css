@@ -1,0 +1,63 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("./beachcity.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+#headerLeft {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+header img {
+    margin-right: 1em;
+}
+header a {
+    color: white;
+    margin-right: 1em;
+}
+header input {
+    padding: 0.25em;
+    border-radius: 4px;
+    border: 0;
+}
+header button {
+    padding: 0.25em;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+main {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+h1 {
+    font-size: 4em;
+}
+main p {
+    width: 32%;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+}
+
+.hidden {
+    visibility: hidden;
+}
