@@ -8,6 +8,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	display: flex;
+	flex-flow: column;
 }
 header {
     display: flex;
@@ -43,6 +45,9 @@ header button {
     background-color: green;
     color: white;
     cursor: pointer;
+}
+main {
+	flex: 1;
 }
 main.homePage {
     padding-left: 10%;
@@ -101,6 +106,49 @@ main.aboutPage .roleBtn {
     text-align: center;
     box-sizing: border-box;
     width: 100%;
+}
+main.contactPage {
+	display: flex;
+	flex-flow: row;
+}
+main.contactPage>div {
+	flex: 1;
+}
+#contactLeft {
+	padding-left: 5%;
+	padding-top: 2%;
+	box-sizing: border-box;
+}
+#contactLeft p {
+	width: 60%;
+}
+#contactRight {
+	padding: 5%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+#contactForm {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 4%;
+}
+label {
+	color: white;
+	display: block;
+}
+#contactForm * {
+	padding: 0.25em;
+	width: 100%;
+	box-sizing: border-box;
+}
+#contactForm button {
+	padding: 0.5em 0;
+	background-color: lightblue;
+	border-radius: 4px;
+	border: 1px solid blue;
+}
+textarea {
+	height: 100px;
 }
 
 .hidden {
