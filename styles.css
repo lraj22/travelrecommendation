@@ -44,9 +44,12 @@ header button {
     color: white;
     cursor: pointer;
 }
-main {
+main.homePage {
     padding-left: 10%;
     padding-top: 5%;
+}
+main.aboutPage {
+    padding-left: 10%;
 }
 h1 {
     font-size: 4em;
@@ -56,6 +59,48 @@ main p {
     font-size: 1.5em;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1em;
+}
+main.aboutPage p {
+    width: 80%;
+    font-size: 1.2em;
+}
+#ourTeam {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2em;
+    width: 90%;
+}
+#ourTeam * {
+    margin: 0;
+}
+.teamCard {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+.teamCard h2 {
+    color: white;
+}
+main.aboutPage .teamDesc {
+    font-size: 0.8em;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    width: 100%;
+}
+main.aboutPage .roleBtn {
+    padding: 4px;
+    border-radius: 8px;
+    background-color: lightblue;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .hidden {
