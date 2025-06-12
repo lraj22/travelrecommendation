@@ -47,6 +47,7 @@ header button {
     cursor: pointer;
 }
 main {
+	position: relative;
 	flex: 1;
 }
 main.homePage {
@@ -54,16 +55,43 @@ main.homePage {
     padding-top: 5%;
 }
 main.aboutPage {
-    padding-left: 10%;
+	padding-left: 10%;
 }
 h1 {
-    font-size: 4em;
+	font-size: 4em;
 }
 main p {
-    width: 32%;
+	width: 32%;
     font-size: 1.5em;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1em;
+}
+#recommendations {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	height: 80vh;
+	overflow: auto;
+}
+#recommendations .card {
+	width: 360px;
+	background-color: white;
+	border-radius: 8px;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+}
+#recommendations img {
+	border-radius: 10px 10px 0 0;
+}
+#recommendations h2, #recommendations p {
+	padding: 0 20px;
+	width: initial;
+}
+#recommendations h2 {
+	font-size: 1.5em;
+}
+#recommendations p {
+	font-size: initial;
 }
 main.aboutPage p {
     width: 80%;
